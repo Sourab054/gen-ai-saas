@@ -4,8 +4,6 @@ import { NextResponse } from "next/server";
 import { checkApiLimit, increaseApiLimit } from "@/lib/api-limit";
 import { checkSubscription } from "@/lib/subscription";
 
-export const runtime = "edge";
-
 const replicate = new Replicate({
   auth: process.env.REPLICATE_API_TOKEN!,
 });
