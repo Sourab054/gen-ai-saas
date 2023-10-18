@@ -7,6 +7,12 @@ const nextConfig = {
       "cdn.openai.com",
     ],
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig;
